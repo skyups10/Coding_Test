@@ -78,7 +78,8 @@ graph[2].append((0, 5))
 
 print(graph)
 
-# DFS 5-8.py
+-------------------------------------------------------------------------
+# DFS(깊이 우선 탐색) 5-8.py
 def dfs(graph, v, visited):
     visitied[v] = True
     print(v, end=' ')
@@ -102,7 +103,7 @@ graph = [
 visited = [False] * 9
 dfs(graph, 1, visited)
 
-# BFS 5-9.py
+# BFS(너비 우선 탐색) 5-9.py
 from collections import deque
 
 def bfs(graph, start, visited):
