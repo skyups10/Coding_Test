@@ -11,7 +11,3 @@ https://github.com/ndb796/python-for-coding-test
 - [ ] 8. 기타 그래프 이론
 - [ ] ~~9. 코딩 테스트에서 자주 출제되는 알고리즘~~
 - [ ] ~~10. 개발형 코딩 테스트~~
-
-Baekjoon Online Judge : https://www.acmicpc.net/step
-
-Programmers : https://programmers.co.kr/
