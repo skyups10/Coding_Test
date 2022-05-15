@@ -46,7 +46,7 @@ result += (m - count) * second
 
 print(result)
 
-# 예제 3-3. 숫자 카드 게임
+# 예제 3-3. 숫자 카드 게임 -> 이중 반복문 사용하는 방법도 존재
 n, m = map(int, input().split())
 
 result = 0
@@ -57,6 +57,22 @@ for i in range(n):
     result = max(result, min_value)
     
 print(result)
+
+# 예제 3-4. 1이 될 때까지 -> 빠르게 동작하는 방법도 존재
+n, k = map(int, input().split())
+result = 0
+
+while n >= k:
+    n -= 1
+    result += 1
+n //= k
+result += 1
+
+while n > 1:
+    n -= 1
+    result += 1
+    
+prrint(result)
 
 # 공백을 기준으로 int형 변수 2개 입력받는 코드 -> map 을 이용하면 편리
 # n, k = map(int, input().split())
