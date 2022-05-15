@@ -14,6 +14,50 @@ for coin in coin_types:
 
 print(count) # 거스름 동전 개수
 
+# 예제 3-2. 큰 수의 법칙
+n, m, k = map(int, input().split())
+data = list(map(int, input().split()))
+
+data.sort()
+first = data[n-1]
+second = data[n-2]
+
+result = 0
+------------------
+# 방법 1.
+while True:
+    for i in range(k):
+        if m == 0:
+            break
+        result += first
+        m -= 1
+    if m == 0:
+        break
+    result += second
+    m -= 1
+------------------
+# 방법 2.
+count = int(m / (k + 1)) * k
+count += m % (k + 1)
+
+result = 0
+result += (count) * first
+result += (m - count) * second
+
+print(result)
+
+# 예제 3-3. 숫자 카드 게임
+n, m = map(int, input().split())
+
+result = 0
+
+for i in range(n):
+    data = list(map(int, input().split()))
+    min_value = min(data)
+    result = max(result, min_value)
+    
+print(result)
+
 # 공백을 기준으로 int형 변수 2개 입력받는 코드 -> map 을 이용하면 편리
 # n, k = map(int, input().split())
 
