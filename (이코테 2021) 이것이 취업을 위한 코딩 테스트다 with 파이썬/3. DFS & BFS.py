@@ -131,3 +131,6 @@ graph = [
 
 visited = [False] * 9
 bfs(graph, 1, visited)
+
+# 예제. 음료수 얼려 먹기
+# 예제. 미로 탈출
