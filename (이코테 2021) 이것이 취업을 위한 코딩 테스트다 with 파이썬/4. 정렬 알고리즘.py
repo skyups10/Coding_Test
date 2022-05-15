@@ -29,6 +29,7 @@ print(array)
 
 # 3. 퀵 정렬
 # : 기준 데이터(피벗) 설정하고 그 기준보다 큰 데이터와 작은 데이터의 위치 바꿈
+# -> 파이썬 장점을 살린 퀵 정렬 소스코드
 array = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]
 
 def quick_sort(array):
@@ -57,3 +58,66 @@ for i in rnage(len(array)):
 for i in range(len(count)):
   for j in range(len(count[i]):
     print(i, end=' ')
+                 
+# 파이썬 정렬 라이브러리
+# sorted 소스 코드
+array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
+                 
+result = sorted(array)
+print(result)
+                 
+# sort 소스 코드
+array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
+                 
+array.sort()
+print(array)
+                 
+# 정렬 라이브러리에서 key를 활용한 소스코드
+array = [('바나나', 2), ('사과', 5), ('당근', 3)]
+                 
+def setting(data):
+    return data[1]
+                 
+result = sorted(array, key=setting)
+print(result)
+                 
+# 예제. 위에서 아래로
+n = int(input())
+                 
+array = []
+for i in range(n):
+    array.append(int(input()))
+                 
+array = sorted(array, reverse=True)
+                 
+for i in array:
+    print(i, end=' ')
+                 
+# 예제. 성적이 낮은 순서로 학생 출력하기
+n = int(input())
+                 
+array = []
+for i in range(n):
+    input_data = input().split()
+    array.append(input_data[0], int(input_data[1]))) # input_data[0] : 이름, input_data[1] : 점수
+                 
+array = sorted(array, key=lambda student: student[1]) # 점수 기준으로 정렬
+                 
+for student in array:
+    print(student[0], end=' ')
+                 
+# 두 배열의 원소 교체
+n, k = map(int(input().split()))
+a = list(map(int(input().split()))
+b = list(map(int(input().split()))
+         
+a.sort()
+b.sort(reverse=True)
+         
+for i in range(k):
+    if a[i] < b[i]:
+         a[i], b[i] = b[i], a[i]
+    else:
+         break
+         
+print(sum(a))
