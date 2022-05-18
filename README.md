@@ -1,7 +1,5 @@
 # Coding-Test
 
-https://github.com/ndb796/python-for-coding-test
-
 - [x] 2. 그리디 & 구현
 - [x] 3. DFS & BFS
 - [x] 4. 정렬 알고리즘
@@ -11,3 +9,5 @@ https://github.com/ndb796/python-for-coding-test
 - [ ] 8. 기타 그래프 이론
 - [ ] ~~9. 코딩 테스트에서 자주 출제되는 알고리즘~~
 - [ ] ~~10. 개발형 코딩 테스트~~
+
+소스코드 : https://github.com/ndb796/python-for-coding-test
