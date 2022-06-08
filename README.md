@@ -1,4 +1,4 @@
-# Coding-Test
+# Coding_Test
 
 - [x] 2. 그리디 & 구현
 - [x] 3. DFS & BFS
